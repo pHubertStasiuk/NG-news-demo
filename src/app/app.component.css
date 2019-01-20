@@ -1,0 +1,15 @@
+.spacer {
+flex: 1,1 auto;
+margin-left: 50px;
+
+}
+.tralalaa{
+  display: flex;
+  justify-content:flex-end;
+}
+
+.tralalaa2{
+  display: flex;
+  justify-content:flex-start;
+}
+

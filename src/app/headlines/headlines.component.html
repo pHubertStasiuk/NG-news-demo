@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="container d-flex justify-content-center">
+    <mat-chip-list class="category-button">
+
+      <mat-chip *ngFor="let category of categories" (click) = "getData(category)">{{category}}</mat-chip>
+
+    </mat-chip-list>
+  </div>
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let article of articles; let i = index;">
+      <mat-card class="card">
+        <img class="article-photo" mat-card-image [src]="article.urlToImage">
+        <mat-card-header>
+          <mat-card-title> {{article.title}} </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="article-content">
+          {{article.description}}
+        </mat-card-content>
+      </mat-card>
+
+
+
+    </div>
+
+  </div>
+
+</div>
+

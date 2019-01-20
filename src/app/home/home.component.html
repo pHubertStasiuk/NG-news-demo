@@ -1,0 +1,18 @@
+<div class="row">
+
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let article of articleList; let i = index;">
+    <mat-card class="card" (click)="navigate(i, article)">
+      <img class="article-photo" mat-card-image [src]="article.urlToImage">
+      <mat-card-header>
+        <mat-card-title> {{article.title}} </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="article-content">
+        {{article.description}}
+      </mat-card-content>
+    </mat-card>
+
+
+
+  </div>
+
+</div>
